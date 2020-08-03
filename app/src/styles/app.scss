@@ -2,12 +2,18 @@
 
 // Global styles
 :root {
-  --color-accent: #17252a;
+  // Primary colors
   --color-primary-dark: #2b7a78;
   --color-primary: #3aafa9;
-  --color-contrast-light: #feffff;
-  --color-contrast: #def2f1;
+  --color-primary-2: #3aafa9;
+  --color-primary-3: #3aafa9;
 
+  // Accent/secondary colors
+  --color-accent: #17252a;
+  --color-light: #eef3f1;
+  --color-secondary: #a1b7ba;
+
+  // Utility colors
   --color-darken-background: #0a0a0acc;
   --color-selected: #41414130;
   --color-selected-light: #ffffff18;
