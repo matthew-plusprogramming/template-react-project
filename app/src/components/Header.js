@@ -7,7 +7,6 @@ import '../styles/nav.scss';
 // Page imports
 
 // Component imports
-import Header from './components/Header';
 
 // Context imports
 
