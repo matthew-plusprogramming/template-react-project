@@ -1,7 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-const ExampleComponent = () => {
+// Style imports
+// import '../styles/.scss';
 
-}
+// Page imports
+
+// Component imports
+
+// Context imports
+
+const ExampleComponent = () => {};
 
 export default ExampleComponent;
