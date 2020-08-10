@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <header>
-      <nav style={{flexDirection: 'column'}}>
+      <nav>
         {/* Main navbar list */}
         <ul>
           {/* Sidenav */}
