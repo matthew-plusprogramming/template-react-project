@@ -45,6 +45,7 @@ header {
       // Display the list of items as flex
       flex: 1;
       display: flex;
+      justify-content: center;
       @media #{$small-and-down} {
         justify-content: space-between;
       }
