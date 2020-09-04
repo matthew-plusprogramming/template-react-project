@@ -1,4 +1,5 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 // Style imports
 import './materialize.scss';
@@ -10,9 +11,9 @@ import './styles/app.scss';
 import Header from './components/Header';
 
 // Context imports
-import {MaterializeCssContext} from './contexts/MaterializeCssContext';
+import { MaterializeCssContext } from './contexts/MaterializeCssContext';
 
-function App() {
+const App: React.FC = () => {
   const materializeContext = useContext(MaterializeCssContext);
   materializeContext.materializeReinit();
 
@@ -21,6 +22,6 @@ function App() {
       <Header />
     </>
   );
-}
+};
 
 export default App;

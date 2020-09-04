@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-// import {Link} from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Style imports
 import '../styles/nav.scss';
@@ -10,10 +10,10 @@ import '../styles/nav.scss';
 
 // Context imports
 
-import {routes} from './config';
+import { routes } from './config';
 
-const Header = () => {
-  const [sidenavShowing, setSidenavShowing] = useState(false);
+const Header: React.FC = () => {
+  const [sidenavShowing, setSidenavShowing] = useState<Boolean>(false);
 
   return (
     <header>

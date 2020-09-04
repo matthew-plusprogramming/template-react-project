@@ -9,6 +9,6 @@ import React from 'react';
 
 // Context imports
 
-const ExampleComponent = () => {};
+const ExampleComponent: React.FC = () => {};
 
 export default ExampleComponent;

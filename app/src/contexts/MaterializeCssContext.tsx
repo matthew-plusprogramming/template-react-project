@@ -1,11 +1,18 @@
-import React, {createContext} from 'react';
+import React, { createContext } from 'react';
 
 // On component did mount m init
 import M from 'materialize-css';
 
-const MaterializeCssContext = createContext();
+const MaterializeCssContext = createContext({
+  materializeReinit: (): void => {},
+  M: M,
+});
 
-const MaterializeCssContextProvider = (props) => {
+interface providerProps {
+  children: JSX.Element;
+}
+
+const MaterializeCssContextProvider = ({ children }: providerProps) => {
   const materializeReinit = () => {
     setTimeout(() => {
       M.AutoInit();
@@ -24,10 +31,11 @@ const MaterializeCssContextProvider = (props) => {
       value={{
         materializeReinit: materializeReinit,
         M: M,
-      }}>
-      {props.children}
+      }}
+    >
+      {children}
     </MaterializeCssContext.Provider>
   );
 };
 
-export {MaterializeCssContextProvider, MaterializeCssContext};
+export { MaterializeCssContextProvider, MaterializeCssContext };

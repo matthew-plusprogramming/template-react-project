@@ -4,4 +4,4 @@ const routes = {
   contact: '/contact',
 };
 
-export {routes};
+export { routes };
