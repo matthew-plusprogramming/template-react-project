@@ -1,6 +1,6 @@
 # :building_construction: Template React Project (TS)
 
-A template TS React project which comes with materializecss, some template styles, and 
+A template TS React project which comes with materializecss, some template styles, and some template react configurations!
 
 ## Getting started:
 
