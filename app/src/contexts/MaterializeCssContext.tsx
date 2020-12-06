@@ -15,7 +15,10 @@ interface providerProps {
 const MaterializeCssContextProvider = ({ children }: providerProps) => {
   const materializeReinit = () => {
     setTimeout(() => {
+      /* We must disable eslint because this library function conflict with this projects style guide */
+      /* eslint-disable */
       M.AutoInit();
+      /* eslint-enable */
       M.Collapsible.init(document.querySelectorAll('.collapsible'), {
         inDuration: 400,
         outDuration: 400,
